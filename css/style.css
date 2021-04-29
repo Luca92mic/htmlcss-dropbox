@@ -84,7 +84,7 @@ header{
 
 .jumbotrone{
     background-color: #b4d0e7;
-    height: 650px;
+    height: 750px;
 }
 
 .jumbotrone-container{
@@ -120,4 +120,23 @@ header{
 
 .text p{
     font-size: 18px;
+}
+
+.gratuita{
+    color: white;
+    border: 50px;
+    background-color: #0061ff;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.annulla{
+    display: block;
+    font-size: 12px;
+    margin: 20px;
+}
+
+i{
+    font-size: 50px;
 }
