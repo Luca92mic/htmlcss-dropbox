@@ -79,3 +79,39 @@ header{
     background-color: #0061ff;
     padding: 10px 20px;
 }
+
+/* jumbotrone */
+.jumbotrone{
+    background-color: #b4d0e7;
+    height: 650px;
+}
+
+.title{
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    padding-top: 50px;
+}
+
+/* sezione testo + img */
+.sezione-img{
+    position: relative;
+    padding: 60px 100px;
+}
+
+.proposta{
+    position: relative;
+    left: 600px;
+    max-width: 960px;
+}
+
+.prova-gratuita{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 25%;
+}
+
+.text p{
+    font-size: 18px;
+}
