@@ -31,26 +31,51 @@ header{
     cursor: pointer;
 }
 
-
+/* menu */
 .menu nav{
     position: absolute;
-    left: 120px;
-    padding: 30px;
+    top: 30px;
 }
 
-
-.menu nav ul li{
+.sinistra nav ul li{
     display: inline-block;
+    font-weight: bold;
     padding: 0 20px;
-}
+    position: relative;
+    left: 180px;
+    }
 
-.menu nav ul li a{
+.sinistra nav ul li a{
     color: black;
     font-size: 14px;
     text-decoration: none;
 }
 
-
-.menu nav ul li a:hover{
+.sinistra nav ul li a:hover{
     text-decoration: 1px underline;
+}
+
+.destra nav ul li{
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 20px;
+    position: relative;
+    left: 1300px;
+}
+
+.destra nav ul li a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.destra nav ul li a:hover{
+    text-decoration: 1px underline;
+}
+
+.inizia{
+    color: white;
+    border: 50px;
+    background-color: #0061ff;
+    padding: 10px 20px;
 }
