@@ -4,3 +4,53 @@
     box-sizing: border-box;
 }
 
+.container {
+    margin: 0px auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu{
+    height: 80px;
+    width: auto;
+    background-color: white;
+    position: relative;
+}
+
+header{
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 2%;
+    max-width: 120px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+
+.menu nav{
+    position: absolute;
+    left: 120px;
+    padding: 30px;
+}
+
+
+.menu nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.menu nav ul li a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+.menu nav ul li a:hover{
+    text-decoration: 1px underline;
+}
