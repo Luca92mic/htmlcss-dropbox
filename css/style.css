@@ -81,14 +81,20 @@ header{
 }
 
 /* jumbotrone */
+
 .jumbotrone{
     background-color: #b4d0e7;
     height: 650px;
 }
 
+.jumbotrone-container{
+    position: relative;
+    max-width: 1500px;
+    left: 250px;
+}
+
 .title{
     font-size: 80px;
-    text-align: center;
     font-family: 'Fjalla One', sans-serif;
     padding-top: 50px;
 }
@@ -101,14 +107,14 @@ header{
 
 .proposta{
     position: relative;
-    left: 600px;
+    left: 450px;
     max-width: 960px;
 }
 
 .prova-gratuita{
     position: absolute;
     top: 15%;
-    left: 10%;
+    left: 0;
     width: 25%;
 }
 
