@@ -1,86 +1,76 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container {
-    margin: 0px auto;
-    font-family: 'Open Sans', sans-serif;
+body {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-.menu{
-    height: 80px;
-    width: auto;
-    background-color: white;
-    position: relative;
+.clearfix::after {
+    content:'';
+    display: table;
+    clear: both;
 }
 
-header{
-    position: relative;
+.float-right {
+    float: right;
 }
 
-.logo{
-    position: absolute;
-    top: 30px;
-    left: 2%;
-    max-width: 120px;
+.float-left {
+    float: left;
 }
 
-.logo:hover{
-    cursor: pointer;
+#logo img {
+    width: 120px;
 }
 
 /* menu */
-.menu nav{
-    position: absolute;
-    top: 30px;
+.all-menu {
+    width: 100%;
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+    line-height: 80px;
+    background-color: white;
 }
 
-.sinistra nav ul li{
-    display: inline-block;
-    font-weight: bold;
-    padding: 0 20px;
-    position: relative;
-    left: 180px;
-    }
+.menu ul li a {
+    color: #000;
+}
 
-.sinistra nav ul li a{
-    color: black;
-    font-size: 14px;
+.menu ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 40px;
+}
+
+.menu a {
     text-decoration: none;
 }
 
-.sinistra nav ul li a:hover{
-    text-decoration: 1px underline;
-}
-
-.destra nav ul li{
+.menu li {
     display: inline-block;
-    font-weight: bold;
-    padding: 0 20px;
-    position: relative;
-    left: 1300px;
+    font-size: 18px;
+    margin: 0 20px;
 }
 
-.destra nav ul li a{
-    color: black;
-    font-size: 14px;
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.barra-principale ul li a:hover {
     text-decoration: none;
 }
 
-.destra nav ul li a:hover{
-    text-decoration: 1px underline;
+.barra-principale ul li:hover {
+    border-bottom: solid 2px #000;
 }
 
-.inizia{
-    color: white;
-    border: 50px;
-    background-color: #0061ff;
-    padding: 10px 20px;
-}
-
-/* jumbotrone */
+/* jumbotron */
 
 .jumbotrone{
     background-color: #b4d0e7;
@@ -126,9 +116,8 @@ header{
     color: white;
     border: 50px;
     background-color: #0061ff;
-    padding: 10px 20px;
     font-size: 16px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .annulla{
@@ -137,6 +126,414 @@ header{
     margin: 20px;
 }
 
-i{
+.arrow{
     font-size: 50px;
+}
+
+/* bottoni */
+
+.bottone-inizia {
+    display: inline;
+    line-height: 80px;
+    background-color: #0061ff;
+    color: white;
+    text-decoration: none;
+    padding: 8px 22px;
+}
+
+.gratuita {
+    display: inline;
+    line-height: 80px;
+        background-color: #0061ff;
+    color: white;
+    text-decoration: none;
+    padding: 8px 22px;
+}
+
+.prova-30-gg, .contatta-vendite {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: #0061ff;
+    color: white;
+    text-decoration: none;
+    padding: 8px 22px;
+    margin: 0 30px;
+    margin-top: 30px;
+}
+
+/* inizio tipo di piano */
+
+.piano-business {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.fatturazione {
+    padding: 45px;
+    margin-bottom: 20px;
+}
+
+.titolo-piano {
+    display: block;
+    text-align: left;
+    font-size: 55px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+/* bottoni */
+.radio-button {
+    text-align: left;
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+/* inzio sez Business - piani */
+.sez-bus-sx, .sez-bus-cc, .sez-bus-dx {
+    width: calc(100% / 3 - 80px);
+    margin: 0 40px;
+    margin-bottom: 50px;
+    border: 1px solid #d0d0d3;
+    float: left;
+}
+
+.nome-piano {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.prezzo-piano, .periodo-piano {
+    font-size: 16px;
+}
+
+.prezzo-piano {
+    font-weight: bold;
+}
+
+.periodo-piano {
+    color: #637381;
+}
+
+.piano-singolo, .piano-team, .team {
+    text-align: center;
+    font-size: 20px;
+
+    line-height: 50px;
+    height: 50px; 
+
+    border-bottom: 1px solid #d0d0d3;
+}
+
+.icona-singolo {
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+
+    background: transparent url(../img/person.svg) scroll no-repeat center;
+    background-size: cover;
+}
+
+.icona-team {
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+
+    background: transparent url(../img/business.svg) scroll no-repeat center;
+    background-size: cover;
+}
+
+.descr-singolo {
+    padding: 30px;
+    line-height: 40px;
+}
+
+.dettagli-piano {
+    height: 150px;
+    padding-left: 30px;
+}
+
+.utente, .archiviazione, .dettagli {
+    margin-bottom: 20px;
+
+}
+
+.icona-utente {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: transparent url(../img/person.svg) scroll no-repeat center;
+    background-size: cover;
+
+}
+
+.icona-pl-utenti {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: transparent url(../img/person-plus.svg) scroll no-repeat center;
+    background-size: cover;
+
+}
+
+.icona-archiviazione {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: transparent url(../img/folder.svg) scroll no-repeat center;
+    background-size: cover;
+
+}
+
+.icona-dettagli {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: transparent url(../img/pencil.svg) scroll no-repeat center;
+    background-size: cover;
+
+}
+
+.icona-dettagli-smile {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: transparent url(../img/smiley-plus.svg) scroll no-repeat center;
+    background-size: cover;
+}
+
+.descr-utente, .descr-archiviazione, .descr-dettagli {
+    display: block;
+    margin-left: 20px;
+}
+
+.acquista {
+    margin:30px 30px;
+    padding-bottom: 30px;
+}
+
+.acquista span {
+    border-bottom: 1px solid #d0d0d3;
+    padding-bottom: 30px;
+}
+
+.acquista a {
+    color: #0061ff;
+}
+
+.salienti {
+    margin-left: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.punti-salienti {
+    height: 400px;
+}
+
+.punti-salienti ul {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.punti-salienti ul li {
+    margin-bottom: 40px;
+}
+
+.punti-salienti ul li i {
+    color: #0061ff;
+}
+
+/* inizio sezione Team */
+.container-team {
+    width: 60%;
+    height: 250px;
+    margin:0 20%;
+    margin-bottom: 100px;
+    border: 1px solid #d0d0d3;
+    float: left;
+}
+
+.enterprise-sx {
+    display: inline-block;
+    width: 70%;
+    padding: 30px;
+}
+
+.enterprise-sx span {
+    display: block;
+}
+
+.enterprise-sx  span:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.enterprise-sx  span:nth-child(2) {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.enterprise-sx  span:nth-child(3) {
+    font-size: 13px;
+}
+
+.enterprise-dx {
+    display: inline-block;
+    width: 30%;
+}
+
+/* partner */
+.container-partner {
+    width: 60%;
+    margin: 0 20%;
+    height: 500px;
+    margin-bottom: 100px;
+    float: left;
+}
+
+.container-partner img {
+    display: inline-block;
+    width: 580px;
+}
+
+.partner-sx {
+    float: left;
+    height: 500px;
+    width: 50%;
+    background-image: url(../img/business-partner.png);
+}
+
+.partner-dx {
+    height: 500px;
+    width: 50%;
+    float: left;
+}
+
+.partner-dx div:first-child {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 100px;
+    padding:0 120px;
+}
+
+.partner-dx p {
+    padding: 50px 120px;
+}
+
+.partner {
+    display: inline;
+    line-height: 80px;
+    background-color: white;
+    color: #000;
+    text-decoration: none;
+    margin-left: 120px;
+    padding: 8px 22px;
+    border: 1px solid black;
+
+}
+
+/* operazioni */
+.operazioni {
+    width: 60%;
+    margin:0 20%;
+    float: left;
+}
+
+.sez-op-or {
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+.piu-operazioni {
+    text-align: center;
+    font-size: 42px;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.op-card-1-img {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/business-feature-switching-tools-vflkisfmX.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.op-card-2-img {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/business-feature-coordinate-it-vflkR4Tqd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.op-card-3-img {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/business-feature-multi-device-vflTta3Hc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.op-card-4-img {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/business-feature-integrations-it-vflhTZYxE.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.op-card-5-img {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/business-feature-send-files-it-vflHzsShK.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.op-card-6-img {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/business-feature-security-vflN0yIHX.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.op-card-1-descr div, .op-card-2-descr div, .op-card-3-descr div, .op-card-4-descr div, .op-card-5-descr div, .op-card-6-descr div {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.op-card-1-descr p, .op-card-2-descr p, .op-card-3-descr p, .op-card-4-descr p, .op-card-5-descr p, .op-card-6-descr p {
+    font-size: 20px;
+    height: 100px;
+}
+
+.sez-op-sx, .sez-op-cc, .sez-op-dx {
+    width: calc(100% / 3 - 80px);
+    margin: 0 40px;
+    margin-bottom: 50px;
+    height: 600px;
+    float: left;
 }

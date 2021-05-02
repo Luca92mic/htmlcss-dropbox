@@ -5,40 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <title>Dropbox</title>
+    <title>Dropbox Business</title>
 </head>
 <body>
-    <div class="container">
+
+        <!-- header -->
         <header>
-            <!-- nav -->
-            <div class="menu">
-                <div class="sinistra">
-                    <img class="logo" src="img/logo-dropbox.png" alt="Logo Dropbox">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Perché Dropbox?</a></li>
-                            <li><a href="#">Funzioni</a></li>
-                            <li><a href="#">Piani e prezzi</a></li>
-                        </ul>
-                    </nav>
+            <div class="all-menu clearfix">
+                <div id="logo" class="float-left">
+                    <img src="img/logo-dropbox.png" alt="Logo Dropbox">
                 </div>
-                <div class="destra">            
-                    <nav>
-                        <ul>
-                            <li><a href="#">Supporto</a></li>
-                            <li><a href="#">Contatta l'ufficio vendite</a></li>
-                            <li><a href="#">Accedi</a></li>
-                            <li><button class="inizia"><a href="#">Inizia</a></button></li>
-                        </ul>
-                    </nav>
-                    
-                </div>
+                <!-- menu -->
+                <nav class="menu float-left">
+                    <ul>
+                        <li><a href="#">Perché Dropbox?</a></li>
+                        <li><a href="#">Funzioni</a></li>
+                        <li><a href="#">Piani e prezzi</a></li>
+                    </ul>
+                </nav>  
+            
+                <div class="float-right"><a class="bottone-inizia" href="#">Inizia</a></div>
+
+                 <nav class="menu float-right">
+                    <ul>
+                        <li><a href="#">Supporto</a></li>
+                        <li><a href="#">Contatta l'ufficio vendite</a></li>
+                        <li><a href="#">Accedi</a></li>
+                    </ul>
+                </nav>
             </div>
-            <!-- jumbotrone -->
+
             <div class="jumbotrone">
                 <div class="jumbotrone-container">
                 
@@ -51,11 +50,11 @@
                         <div class="text prova-gratuita">
                             <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
 
-                            <button class="gratuita">Inizia la tua prova gratuita</button>
+                            <div class="gratuita">Inizia la tua prova gratuita</div>
 
                             <span class="annulla">Annullala in qualsiasi momento</span>
 
-                            <i class="fas fa-long-arrow-alt-down"></i>
+                            <div class="arrow"><i class="fas fa-long-arrow-alt-down"></i></div>
 
                         </div>   
                         
@@ -68,13 +67,285 @@
                 </div>
 
             </div>
-
-
-            
         </header>
 
-    </div>
-    
+        <!-- main -->
+        <main>
 
+            <!-- inizio piano -->
+            <div id="business" class="piano-business">
+                <div class="fatturazione">
+                    <span class="titolo-piano">Trova il piano Dropbox Business che fa per te</span>
+                    <div class="radio-button float-left">
+                        <input type="radio" checked="checked" name="radio">
+                        Fatturazione mensile
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="radio-button float-left">
+                        <input type="radio" checked="checked" name="radio">
+                        Fatturazione annuale
+                        <span class="checkmark"></span>
+                    </div>
+                </div>
+
+                <!-- professional -->
+                <div class="sez-bus-sx">
+                    <div class="piano-singolo">
+                        <div class="icona-singolo"></div>
+                        <span>Singolo</span>
+                    </div>
+
+                    <div class="descr-singolo">
+                        <div class="nome-piano">Professional</div>
+                        <div class="prezzo-piano">19,99€</div>
+                        <div class="periodo-piano">/mese</div>
+                    </div>
+
+                    <div class="dettagli-piano clearfix">
+                        <div class="utente">
+                            <div class="icona-utente"></div>
+                            <div class="descr-utente">1 utente</div>
+                        </div>
+
+                        <div class="archiviazione clearfix">
+                            <div class="icona-archiviazione"></div>
+                            <div class="descr-archiviazione"> 3 TB di spazio di archiviazione sicuro</div>
+                        </div>
+
+                        <div class="dettagli clearfix">
+                            <div class="icona-dettagli"></div>
+                            <div class="descr-dettagli"> Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                        </div>  
+
+                    </div>
+
+                    <div class="prova-30-gg">Prova gratis per 30 giorni</div>
+
+                    <div class="acquista">
+                        <span>Oppure</span>
+                        <a href="#">acquista ora</a>
+                    </div>
+                    
+                    <div class="salienti">Punti salienti del piano</div>
+
+                    <div class="punti-salienti">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Invia file fino a 100 GB con Dropbox Transfer</li>
+                            <li><i class="fas fa-check"></i> Cartelle offline su dispositivi mobili</li>
+                            <li><i class="fas fa-check"></i> Pulizia remota dell'account</li>
+                            <li><i class="fas fa-check"></i> Filigrana documento</li>
+                            <li><i class="fas fa-check"></i> Assistenza prioritaria via email e chat</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- standard -->
+                <div class="sez-bus-cc">
+                    <div class="piano-singolo">
+                        <div class="icona-team"></div>
+                        <span>Team</span>
+                    </div>
+
+                    <div class="descr-singolo">
+                        <div class="nome-piano">Standard</div>
+                        <div class="prezzo-piano">12€</div>
+                        <div class="periodo-piano">/utente /mese a partire da 3 utenti</div>
+                    </div>
+
+                    <div class="dettagli-piano clearfix">
+                        <div class="utente">
+                            <div class="icona-pl-utenti"></div>
+                            <div class="descr-utente">3+ Utenti</div>
+                        </div>
+
+                        <div class="archiviazione clearfix">
+                            <div class="icona-archiviazione"></div>
+                            <div class="descr-archiviazione"> 5 TB di spazio di archiviazione sicuro</div>
+                        </div>
+
+                        <div class="dettagli clearfix">
+                            <div class="icona-dettagli-smile"></div>
+                            <div class="descr-dettagli">Strumenti semplici da usare per la gestione del team e la collaborazione</div>
+                        </div>  
+
+                    </div>
+
+                    <div class="prova-30-gg">Prova gratis per 30 giorni</div>
+
+                    <div class="acquista">
+                        <span>Oppure</span>
+                        <a href="#">acquista ora</a>
+                    </div>
+                    
+                    <div class="salienti">Punti salienti del piano</div>
+
+                    <div class="punti-salienti clearfix">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Accesso amministratore unico per gestire più team</li>
+                            <li><i class="fas fa-check"></i> Console amministratore e registro di controllo</li>
+                            <li><i class="fas fa-check"></i> Crittografia AES a 256 bit e SSL/TLS</li>
+                            <li><i class="fas fa-check"></i> Autorizzazioni dettagliate per la condivisione</li>
+                            <li><i class="fas fa-check"></i> Assistenza prioritaria via email, chat e telefonica</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- advanced -->
+                <div class="sez-bus-dx">
+                    <div class="piano-team">
+                        <div class="icona-team"></div>
+                        <span>Team</span>
+                    </div>
+
+                    <div class="descr-singolo">
+                        <div class="nome-piano">Advanced</div>
+                        <div class="prezzo-piano">18€</div>
+                        <div class="periodo-piano">/utente /mese a partire da 3 utenti</div>
+                    </div>
+
+                    <div class="dettagli-piano clearfix">
+                        <div class="utente">
+                            <div class="icona-pl-utenti"></div>
+                            <div class="descr-utente">3+ Utenti</div>
+                        </div>
+
+                        <div class="archiviazione clearfix">
+                            <div class="icona-archiviazione"></div>
+                            <div class="descr-archiviazione">Tutto lo spazio di cui ha bisogno il tuo team</div>
+                        </div>
+
+                        <div class="dettagli clearfix">
+                            <div class="icona-dettagli-smile"></div>
+                            <div class="descr-dettagli">Funzioni sofisticate di amministrazione, audit, sicurezza e integrazione</div>
+                        </div>  
+
+                    </div>
+
+                    <div class="prova-30-gg">Prova gratis per 30 giorni</div>
+
+                    <div class="acquista">
+                        <span>Oppure</span>
+                        <a href="#">acquista ora</a>
+                    </div>
+                    
+                    <div class="salienti">Punti salienti del piano</div>
+
+                    <div class="punti-salienti clearfix">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Tutte le funzioni del piano Standard</li>
+                            <li><i class="fas fa-check"></i> Controlli amministrativi avanzati</li>
+                            <li><i class="fas fa-check"></i> Ruoli amministratore distinti</li>
+                            <li><i class="fas fa-check"></i> Integrazione single-sign-on (SSO)</li>
+                            <li><i class="fas fa-check"></i> Invito con imposizione</li>
+                            <li><i class="fas fa-check"></i> Assistenza prioritaria via email, chat e telefonica</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- team -->
+            <div class="container-team">
+                <div class="team">
+                    <div class="icona-team"></div>
+                    <span>Team</span>
+                </div>
+                <div class="enterprise-sx">
+                    <span>Enterprise</span>
+                    <span>Contatta l'ufficio vendite per i prezzi</span>
+                    <span>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.
+                        Contatta l'ufficio vendite</span>
+                </div>
+                <div class="enterprise-dx">
+                    <div class="contatta-vendite">Contatta l'ufficio vendite</div>
+                </div>
+            </div>
+
+            <!-- partner -->
+            <div class="container-partner">
+                <div class="partner-sx"></div>
+                <div class="partner-dx">
+                    <div>Entra in contatto con un partner Dropbox</div>
+                    <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                    <div class="partner">Trova un partner</div>
+                </div>
+            </div>
+
+            <!-- operazioni -->
+            <div class="operazioni">
+                <div class="sez-op-or">
+                    <div class="piu-operazioni">Esegui più operazioni con Dropbox Business</div>
+                </div>
+                <!-- inizio card 1 -->
+                <div class="sez-op-sx">
+                    <div class="op-card-1-img"></div>
+                    <div class="op-card-1-descr">
+                        <div>Passa di meno da uno strumento all'altro</div>
+                        <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
+                    </div>
+                </div>
+
+                <!-- inizio card 2 -->
+                <div class="sez-op-cc">
+                    <div class="op-card-2-img"></div>
+                    <div class="op-card-2-descr">
+                        <div>Trasforma le tue cartelle</div>
+                        <p>Dropbox riunisce i tuoi file e i tuoi contenuti cloud, consentendoti di raggruppare presentazioni PowerPoint, documenti Google, bacheche di Trello e qualsiasi strumento necessario.</p>
+                    </div> 
+                </div>
+
+                <!-- inizio card-3 -->
+                <div class="sez-op-dx">
+                    <div class="op-card-3-img"></div>
+                    <div class="op-card-3-descr">
+                        <div>Collaborazione sempre e ovunque</div>
+                        <p>Accedi facilmente e condividi il tuo lavoro da qualsiasi computer, dispositivo mobile o browser web.</p>
+                    </div> 
+                    
+                </div>
+            </div>
+            
+            <div class="operazioni">
+                <!-- inizio card 4 -->
+                <div class="sez-op-sx">
+                    <div class="op-card-4-img"></div>
+                    <div class="op-card-4-descr">
+                        <div>Avvia una discussione</div>
+                        <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
+                    </div>
+                </div>
+
+                <!-- inizio card 5 -->
+                <div class="sez-op-cc">
+                    <div class="op-card-5-img"></div>
+                    <div class="op-card-5-descr">
+                        <div>Trasforma le tue cartelle</div>
+                        <p>Dropbox riunisce i tuoi file e i tuoi contenuti cloud, consentendoti di raggruppare presentazioni PowerPoint, documenti Google, bacheche di Trello e qualsiasi strumento necessario.</p>
+                    </div> 
+                </div>
+
+                <!-- inizio card-6 -->
+                <div class="sez-op-dx">
+                    <div class="op-card-6-img"></div>
+                    <div class="op-card-6-descr">
+                        <div>Collaborazione sempre e ovunque</div>
+                        <p>Accedi facilmente e condividi il tuo lavoro da qualsiasi computer, dispositivo mobile o browser web.</p>
+                    </div> 
+                    
+                </div>
+
+            </div>
+            <!-- fine sez. operazioni -->
+
+        </main>
+        <!-- fine main -->
+
+        
+        <!-- inizio footer -->
+        <footer>
+
+        </footer>
+    
 </body>
 </html>
